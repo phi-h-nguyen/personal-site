@@ -6,7 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<title>Phi Henry Nguyen</title>
-		<link rel="shortcut icon" href="assets/favicon.png" />
+		<link rel="shortcut icon" href="assets/favicon.jpg" />
 
 		<!-- Bootstrap, AOS, and Google Fonts -->
 		<link rel="stylesheet" href="css/bootstrap.css" />
@@ -15,7 +15,7 @@
 			href="https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans:wght@300&family=Quicksand&display=swap"
 			rel="stylesheet"
 		/>
-		
+
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/main.css" />
 
@@ -40,23 +40,31 @@
 		<script src="js/typewriter.js"></script>
 
 		<style>
-
 			img {
 				width: 35vh;
 				border-radius: 50%;
 				margin: 4rem;
+				margin-bottom: 2rem;
+				max-width: 60vw;
 			}
 
-			@media (max-width:576px) {
-				img{
-					margin: 4rem 0
+			div i {
+				margin: 0 0.5rem;
+			}
+
+			div a:hover {
+				text-decoration: none;
+			}
+
+			@media (max-width: 576px) {
+				img {
+					margin: 3rem 0;
 				}
 			}
+
 		</style>
 
-		<script>
-
-		</script>
+		<script></script>
 	</head>
 
 	<body>
@@ -90,7 +98,7 @@
 		</header>
 
 		<div class="container text-center" data-aos="fade-up">
-			<img class="img-fluid" src="assets/headshot.jpg" />
+			<img class="" src="assets/headshot.jpg" />
 			<h1>Phi Henry Nguyen</h1>
 			<p>
 				<span
@@ -102,40 +110,45 @@
 					<span class="wrap"></span>
 				</span>
 			</p>
+			<div class="container" style="font-size: 1.2rem;">
+				<a
+					href="https://github.com/phi-h-nguyen"
+					target="_blank"
+					rel="noopener"
+					data-toggle="tooltip"
+					data-placement="bottom"
+					title="github.com/phi-h-nguyen"
+				>
+					<i class="fa fa-github fa-lg" aria-hidden="true"></i>
+				</a>
+				<a
+					href="https://www.linkedin.com/in/phi-henry-nguyen/"
+					target="_blank"
+					rel="noopener"
+					data-toggle="tooltip"
+					data-placement="bottom"
+					title="linkedin.com/in/phi-henry-nguyen"
+				>
+					<i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+				</a>
+				<a
+					href="mailto:hpnguyen@andrew.cmu.edu"
+					target="_blank"
+					rel="noopener"
+					data-toggle="tooltip"
+					data-placement="bottom"
+					title="hpnguyen@andrew.cmu.edu"
+				>
+					<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+				</a>
+			</div>
 		</div>
 
-		<footer class="icons text-right">
-			<a
-				href="https://github.com/phi-h-nguyen"
-				target="_blank"
-				rel="noopener"
-				data-toggle="tooltip"
-				data-placement="top"
-				title="github.com/phi-h-nguyen"
-			>
-				<i class="fa fa-github fa-lg" aria-hidden="true"></i>
-			</a>
-			<a
-				href="https://www.linkedin.com/in/phi-henry-nguyen/"
-				target="_blank"
-				rel="noopener"
-				data-toggle="tooltip"
-				data-placement="top"
-				title="linkedin.com/in/phi-henry-nguyen"
-			>
-				<i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
-			</a>
-			<a
-				href="mailto:hpnguyen@andrew.cmu.edu"
-				target="_blank"
-				rel="noopener"
-				data-toggle="tooltip"
-				data-placement="top"
-				title="hpnguyen@andrew.cmu.edu"
-			>
-				<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
-			</a>
+		<footer class="position-absolute">
+			<hr width=80%>
+			<p>&copy 2020 Phi Henry Nguyen</p>
 		</footer>
+
 		<script>
 			$(document).ready(function () {
 				$('[data-toggle="tooltip"]').tooltip();
