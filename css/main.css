@@ -1,0 +1,142 @@
+/* Scrollbars */
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+body {
+    background: rgb(230, 240, 240);
+}
+
+/* Text */
+
+h1, h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+/* Links */
+
+a {
+    color: #333;
+}
+
+a:hover {
+    color: #888
+}
+
+/* Navbar */
+
+header {
+    padding: 0 7.5%
+}
+
+.navigation a {
+    color: #888;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: auto 0;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    color: #000
+}
+
+.navigation .selected {
+    color: #000
+}
+/* Footer */
+
+footer p {
+    text-align: center;
+    font-size: 16px
+}
+
+.footerLine {
+    margin: 1rem 10rem;
+    border-color: #333
+}
+
+.icons {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    width: 100%;
+}
+
+.icons a {
+    margin: 0 .35rem;
+}
+
+.tooltip-inner {
+    white-space: nowrap;
+    max-width: none;
+}
+
+/* Mobile Styling */
+
+@media (max-width:576px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    body {
+        overflow-y: hidden;
+    }
+    header {
+        padding: 0
+    }
+    header img {
+        padding: 0
+    }
+    .navigation a {
+        width: auto;
+        margin: auto;
+        padding: auto;
+    }
+    .nav-link{
+        padding-top: .5rem;
+    }
+    .navbar-toggler{
+        margin-bottom: 1rem;
+    }
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    img {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .icons a {
+        background: rgba(200, 200, 200, .7);
+        padding: .5rem;
+        border-radius: 20%;
+        margin: .5rem;
+        margin-bottom: 2rem;
+        color: black;
+    }
+    .icons a:hover {
+        background: rgba(220, 220, 220, .9);
+        text-decoration: none;
+    }
+    .icons {
+        right: 10px;
+        bottom: 50px;
+    }
+    .footerLine {
+        margin: .5rem 3rem;
+    }
+}
