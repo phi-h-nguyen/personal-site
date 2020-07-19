@@ -5,11 +5,11 @@
 		<!-- Meta -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<title>Phi Henry Nguyen</title>
+		<title>Projects - Phi Henry Nguyen</title>
 		<link rel="shortcut icon" href="assets/favicon.png" />
 
 		<!-- Bootstrap, AOS, and Google Fonts -->
-		<link rel="stylesheet" href="assets/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/aos.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans:wght@300&family=Quicksand&display=swap"
@@ -18,7 +18,7 @@
 		<script src="js/aos.js"></script>
 
 		<!-- Custom CSS -->
-		<link rel="stylesheet" href="assets/main.css" />
+		<link rel="stylesheet" href="css/main.css" />
 
 		<!-- JS, Popper.js, jQuery, FontAwesome, and Google Fonts -->
 		<!-- JS, Popper.js, and jQuery -->
@@ -40,85 +40,15 @@
 		<script src="https://use.fontawesome.com/9469a27cf9.js"></script>
 
 		<style>
-			html {
-				overflow: hidden;
-			}
 			img {
-				width: 35vh;
-				border-radius: 50%;
-				margin: 4rem;
+				border-radius: 10px;
+				max-height: 40vh;
 			}
-			body {
-				background: rgb(230, 240, 240);
-			}
-			.tooltip-inner {
-				white-space: nowrap;
-				max-width: none;
+
+			p a {
+				color: #227;
 			}
 		</style>
-
-		<script>
-			
-			var TxtType = function (el, toRotate, period) {
-				this.toRotate = toRotate;
-				this.el = el;
-				this.loopNum = 0;
-				this.period = parseInt(period, 10) || 2000;
-				this.txt = '';
-				this.tick();
-				this.isDeleting = false;
-			};
-
-			TxtType.prototype.tick = function () {
-				var i = this.loopNum % this.toRotate.length;
-				var fullTxt = this.toRotate[i];
-
-				if (this.isDeleting) {
-					this.txt = fullTxt.substring(0, this.txt.length - 1);
-				} else {
-					this.txt = fullTxt.substring(0, this.txt.length + 1);
-				}
-
-				this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-				var that = this;
-				var delta = 200 - Math.random() * 100;
-
-				if (this.isDeleting) {
-					delta /= 2;
-				}
-
-				if (!this.isDeleting && this.txt === fullTxt) {
-					delta = this.period;
-					this.isDeleting = true;
-				} else if (this.isDeleting && this.txt === '') {
-					this.isDeleting = false;
-					this.loopNum++;
-					delta = 500;
-				}
-
-				setTimeout(function () {
-					that.tick();
-				}, delta);
-			};
-
-			window.onload = function () {
-				var elements = document.getElementsByClassName('typewrite');
-				for (var i = 0; i < elements.length; i++) {
-					var toRotate = elements[i].getAttribute('data-type');
-					var period = elements[i].getAttribute('data-period');
-					if (toRotate) {
-						new TxtType(elements[i], JSON.parse(toRotate), period);
-					}
-				}
-				// INJECT CSS
-				var css = document.createElement('style');
-				css.type = 'text/css';
-				css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid #000}';
-				document.body.appendChild(css);
-			};
-			
-		</script>
 	</head>
 
 	<body>
@@ -142,28 +72,18 @@
 						>Menu
 					</a>
 					<div class="collapse navbar-collapse" id="navbarCollapse">
-						<a class="nav-link selected" href="index.html"> Home </a>
-						<a class="nav-link" href="#"> Projects </a>
-						<a class="nav-link" href="#"> Resume </a>
-						<a class="nav-link" href="#"> About </a>
+						<a class="nav-link" href="index.html"> Home </a>
+						<a class="nav-link selected" href="#"> Projects </a>
+						<a class="nav-link" href="resume.html"> Resume </a>
+						<a class="nav-link" href="about.html"> About </a>
 					</div>
 				</nav>
 			</div>
 		</header>
 
-		<div class="container text-center">
-			<img class="img-fluid" src="assets/headshot.jpg" />
-			<h1>Phi Henry Nguyen</h1>
-			<p>
-				<span
-					href="#"
-					class="typewrite"
-					data-period="2000"
-					data-type='[ "Student at Carnegie Mellon University", "Robinhood Enthusiast", "Aspiring Developer", "Home Cook"]'
-				>
-					<span class="wrap"></span>
-				</span>
-			</p>
+		<div class="container mt-3 px-3 px-md-5 text-center" data-aos="fade-up">
+			<h3>Some of my Projects :)</h3>
+			<p>[under construction]</p>
 		</div>
 
 		<footer class="icons text-right">
@@ -183,7 +103,7 @@
 				rel="noopener"
 				data-toggle="tooltip"
 				data-placement="top"
-				title="linkedin.com/in/phi-henry-nguyen/"
+				title="linkedin.com/in/phi-henry-nguyen"
 			>
 				<i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
 			</a>
