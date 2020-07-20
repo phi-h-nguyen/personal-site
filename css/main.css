@@ -65,9 +65,11 @@ p {
 
 a {
     color: #333;
+    transition: .3s
 }
 
 a:hover {
+    transition: .3s;
     color: #888
 }
 
