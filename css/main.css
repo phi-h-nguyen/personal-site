@@ -9,19 +9,30 @@ body {
     color: black
 }
 
+/* Hover Effect */
+
+.hoverable {
+    transition: .3s;
+}
+
+.hoverable:hover{
+    transition: .3s;
+    opacity: 0.8;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2)!important
+}
+
 /* Highlight */
 
 ::selection {
     background-color: #333;
     color: #fff;
 }
-/*** Mozilla based browsers ***/
+
 ::-moz-selection {
     background-color: #333;
     color: #fff;
 }
 
-/***For Other Browsers ***/
 ::-o-selection {
     background-color: #333;
     color: #fff;
@@ -32,7 +43,6 @@ body {
     color: #fff;
 }
 
-/*** For Webkit ***/
 ::-webkit-selection {
     background-color: #333;
     color: #fff;
