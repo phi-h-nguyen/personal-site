@@ -109,6 +109,10 @@ footer p {
     margin: 0 .35rem;
 }
 
+.icons a:hover {
+    text-decoration: none;
+}
+
 .tooltip-inner {
     white-space: nowrap;
     max-width: none;
