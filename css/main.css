@@ -4,6 +4,7 @@ html {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
 body {
     background: rgb(230, 240, 240);
     color: black
@@ -15,10 +16,39 @@ body {
     transition: .3s;
 }
 
-.hoverable:hover{
+.hoverable:hover {
     transition: .3s;
     opacity: 0.8;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2)!important
+}
+
+/* Typing effect */
+
+@-webkit-keyframes typeBlink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+@keyframes typeBlink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+.typeBlink {
+    border-right: 0.08em solid #000;
+}
+
+.typeBlink {
+    -webkit-animation: typeBlink 1s step-end infinite;
+    animation: typeBlink 1s step-end infinite;
 }
 
 /* Highlight */
@@ -50,7 +80,7 @@ body {
 
 /* Text */
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: bold;
 }
@@ -98,6 +128,7 @@ header {
 .navigation .selected {
     color: #000
 }
+
 /* Footer */
 
 footer {
@@ -151,10 +182,10 @@ footer p {
         margin: auto;
         padding: auto;
     }
-    .nav-link{
+    .nav-link {
         padding-top: .5rem;
     }
-    .navbar-toggler{
+    .navbar-toggler {
         margin-bottom: 1rem;
     }
     .row {
@@ -165,7 +196,6 @@ footer p {
         text-align: center;
         flex-direction: column;
     }
-
     .icons {
         visibility: hidden;
     }
