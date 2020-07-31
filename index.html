@@ -1,162 +1,135 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<!-- Meta -->
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<title>Phi Henry Nguyen</title>
-		<meta name="description" content="Phi Henry Nguyen - Student at Carnegie Mellon University" />
-		<link rel="shortcut icon" href="assets/favicon.jpg" />
 
-		<!-- Bootstrap, AOS, and Google Fonts -->
-		<link rel="stylesheet" href="css/bootstrap.css" />
-		<link rel="stylesheet" href="css/aos.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans:wght@300&family=Quicksand&display=swap"
-			rel="stylesheet"
-		/>
+<head>
+	<!-- Meta -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Phi Henry Nguyen</title>
+	<meta name="description" content="Phi Henry Nguyen - Student at Carnegie Mellon University" />
+	<link rel="shortcut icon" href="assets/favicon.jpg" />
 
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="css/main.css" />
+	<!-- Open Graph Meta Tags -->
+	<meta property="og:title" content="Phi Henry Nguyen" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="A semi-professional site :)" />
+	<meta property="og:image" content="https://i.ibb.co/QkStBdx/landing.jpg" />
 
-		<!-- JS, Popper.js, jQuery, and FontAwesome -->
-		<script
-			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-			crossorigin="anonymous"
-		></script>
-		<script src="https://use.fontawesome.com/9469a27cf9.js"></script>
-		<script src="js/aos.js"></script>
-		<script src="js/typewriter.js"></script>
+	<!-- Bootstrap, AOS, and Google Fonts -->
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/aos.css" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans:wght@300&family=Quicksand&display=swap"
+		rel="stylesheet" />
 
-		<style>
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/main.css" />
+
+	<!-- JS, Popper.js, jQuery, and FontAwesome -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/9469a27cf9.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/typewriter.js"></script>
+
+	<style>
+		img {
+			width: 35vh;
+			border-radius: 50%;
+			margin: 4rem;
+			margin-bottom: 2rem;
+			max-width: 60vw;
+		}
+
+		div i {
+			margin: 0 0.5rem;
+		}
+
+		div a:hover {
+			text-decoration: none;
+		}
+
+		@media (max-width: 576px) {
 			img {
-				width: 35vh;
-				border-radius: 50%;
-				margin: 4rem;
-				margin-bottom: 2rem;
-				max-width: 60vw;
+				margin: 2rem 0;
+				margin-bottom: 1rem;
 			}
+		}
+	</style>
+</head>
 
-			div i {
-				margin: 0 0.5rem;
-			}
+<body>
+	<script>
+		AOS.init();
+		$(document).ready(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
 
-			div a:hover {
-				text-decoration: none;
-			}
+	<header>
+		<div class="row justify-content-center justify-content-md-end">
+			<nav class="mt-5 mx-lg-5 navigation navbar navbar-expand-sm navbar-light">
+				<a class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"
+					aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">Menu
+				</a>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<a class="nav-link selected" href=""> Home </a>
+					<a class="nav-link" href="projects.html"> Projects </a>
+					<a class="nav-link" href="resume.html"> Resume </a>
+					<a class="nav-link" href="about.html"> About </a>
+				</div>
+			</nav>
+		</div>
+	</header>
 
-			@media (max-width: 576px) {
-				img {
-					margin: 2rem 0;
-					margin-bottom: 1rem;
-				}
-			}
-		</style>
-	</head>
-
-	<body>
-		<script>
-			AOS.init();
-			$(document).ready(function () {
-				$('[data-toggle="tooltip"]').tooltip();
-			});
-		</script>
-
-		<header>
-			<div class="row justify-content-center justify-content-md-end">
-				<nav class="mt-5 mx-lg-5 navigation navbar navbar-expand-sm navbar-light">
-					<a
-						class="navbar-toggler"
-						data-toggle="collapse"
-						data-target="#navbarCollapse"
-						aria-controls="navbarCollapse"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-						>Menu
-					</a>
-					<div class="collapse navbar-collapse" id="navbarCollapse">
-						<a class="nav-link selected" href=""> Home </a>
-						<a class="nav-link" href="projects.html"> Projects </a>
-						<a class="nav-link" href="resume.html"> Resume </a>
-						<a class="nav-link" href="about.html"> About </a>
-					</div>
-				</nav>
-			</div>
-		</header>
-
-		<div class="container text-center">
-			<div data-aos="fade-down">
-				<a href="about.html">
-					<img class="hoverable" src="assets/headshot.jpg" />
+	<div class="container text-center">
+		<div data-aos="fade-down">
+			<a href="about.html">
+				<img class="hoverable" src="assets/headshot.jpg" />
+			</a>
+		</div>
+		<div data-aos="fade-up">
+			<h1>Phi Henry Nguyen</h1>
+			<p>
+				<span href="#" class="typewrite typeBlink" data-period="2500"
+					data-type='[ "Student at Carnegie Mellon University", "Aspiring Developer", "Robinhood Enthusiast", "Avid Thrift Shopper", "Ametuer Home Cook", "88rising Devotee", "Honored that you read all of these :)"]'>
+				</span>
+			</p>
+			<div class="container" style="font-size: 1.2rem;">
+				<a href="https://github.com/phi-h-nguyen" target="_blank" rel="noopener" data-toggle="tooltip"
+					data-placement="bottom" title="github.com/phi-h-nguyen">
+					<i class="fa fa-github fa-lg" aria-hidden="true"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/phi-henry-nguyen/" target="_blank" rel="noopener"
+					data-toggle="tooltip" data-placement="bottom" title="linkedin.com/in/phi-henry-nguyen">
+					<i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+				</a>
+				<a href="mailto:hpnguyen@andrew.cmu.edu" target="_blank" rel="noopener" data-toggle="tooltip"
+					data-placement="bottom" title="hpnguyen@andrew.cmu.edu">
+					<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
 				</a>
 			</div>
-			<div data-aos="fade-up">
-				<h1>Phi Henry Nguyen</h1>
-				<p>
-					<span
-						href="#"
-						class="typewrite typeBlink"
-						data-period="2500"
-						data-type='[ "Student at Carnegie Mellon University", "Aspiring Developer", "Robinhood Enthusiast", "Avid Thrift Shopper", "Ametuer Home Cook", "88rising Devotee", "Honored that you read all of these :)"]'
-					>
-					</span>
-				</p>
-				<div class="container" style="font-size: 1.2rem;">
-					<a
-						href="https://github.com/phi-h-nguyen"
-						target="_blank"
-						rel="noopener"
-						data-toggle="tooltip"
-						data-placement="bottom"
-						title="github.com/phi-h-nguyen"
-					>
-						<i class="fa fa-github fa-lg" aria-hidden="true"></i>
-					</a>
-					<a
-						href="https://www.linkedin.com/in/phi-henry-nguyen/"
-						target="_blank"
-						rel="noopener"
-						data-toggle="tooltip"
-						data-placement="bottom"
-						title="linkedin.com/in/phi-henry-nguyen"
-					>
-						<i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
-					</a>
-					<a
-						href="mailto:hpnguyen@andrew.cmu.edu"
-						target="_blank"
-						rel="noopener"
-						data-toggle="tooltip"
-						data-placement="bottom"
-						title="hpnguyen@andrew.cmu.edu"
-					>
-						<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
-					</a>
-				</div>
-			</div>
 		</div>
+	</div>
 
-		<footer class="position-absolute">
-			<hr width="80%" />
-			<p>&copy 2020 Phi Henry Nguyen</p>
-		</footer>
+	<footer class="position-absolute">
+		<hr width="80%" />
+		<p>&copy 2020 Phi Henry Nguyen</p>
+	</footer>
 
-		<script>
-			$(document).ready(function () {
-				$('[data-toggle="tooltip"]').tooltip();
-			});
-		</script>
-	</body>
+	<script>
+		$(document).ready(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+</body>
+
 </html>
