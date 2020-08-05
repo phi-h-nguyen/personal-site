@@ -78,6 +78,18 @@ body {
     color: #fff;
 }
 
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+img::-webkit-selection {
+    background: transparent;
+}
+
 /* Text */
 
 h1, h2, h3, h4, h5 {
