@@ -45,7 +45,9 @@
 		img {
 			width: 35vh;
 			border-radius: 50%;
+			/*
 			margin: 3rem;
+			*/
 			max-width: 60vw;
 		}
 
@@ -62,7 +64,7 @@
 		}
 
 		@media (max-width: 576px) {
-			img {
+			.avatar {
 				margin: 2rem 0;
 				margin-bottom: 1rem;
 			}
@@ -72,6 +74,21 @@
 			#foot {
 				position: relative;
 			}
+		}
+
+		.avatar {
+			width: 35vh;
+			height: 35vh;
+			border-radius: 50%;
+			max-width: 60vw;
+			max-height: 60vw;
+			margin: 3rem;
+			box-sizing: border-box;
+			border: 2px white solid;
+			border-radius: 50%;
+			overflow: hidden;
+			box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+			animation: float 5s ease-in-out infinite;
 		}
 	</style>
 </head>
@@ -105,10 +122,12 @@
 		</div>
 	</header>
 
-	<div class="container text-center">
+	<div class="container text-center justify-content-center">
 		<div data-aos="fade-down">
 			<a href="about.html">
-				<img class="hoverable" src="assets/headshot.jpg" data-tilt data-tilt-max="0" data-tilt-scale="1.05" data-tilt-speed="300"/>
+				<div class="d-block avatar mx-auto">
+					<img class="hoverable avata" src="assets/headshot.jpg"  />
+				</div>
 			</a>
 		</div>
 		<div data-aos="fade-up">
