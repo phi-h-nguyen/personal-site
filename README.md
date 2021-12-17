@@ -1,4 +1,4 @@
 # personal-site
-My Personal Site [under construction]
+My Personal Site
 
 Deployed site: https://phihenrynguyen.com/
