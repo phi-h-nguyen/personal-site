@@ -1,150 +1,278 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>About me</title>
+    <meta
+      name="description"
+      content="About me - Phi Henry Nguyen - Student at Carnegie Mellon University"
+    />
+    <link rel="icon" href="assets/favicon.png" />
 
-<head>
-	<!-- Meta -->
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<title>About me</title>
-	<meta name="description" content="About me - Phi Henry Nguyen - Student at Carnegie Mellon University" />
-	<link rel="icon" href="assets/favicon.png"/>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Phi Henry Nguyen" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="About me" />
+    <meta property="og:image" content="https://i.ibb.co/0nzJth5/landing.jpg" />
 
-	<!-- Open Graph Meta Tags -->
-	<meta property="og:title" content="Phi Henry Nguyen" />
-	<meta property="og:type" content="website" />
-	<meta property="og:description" content="About me" />
-	<meta property="og:image" content="https://i.ibb.co/0nzJth5/landing.jpg" />
+    <!-- Bootstrap, AOS, and Google Fonts -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans:wght@300&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/aos.js"></script>
 
-	<!-- Bootstrap, AOS, and Google Fonts -->
-	<link rel="stylesheet" href="css/bootstrap.css" />
-	<link rel="stylesheet" href="css/aos.css" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans:wght@300&family=Quicksand&display=swap"
-		rel="stylesheet" />
-	<script src="js/aos.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
 
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="css/main.css" />
+    <!-- JS, Popper.js, jQuery, FontAwesome, and Google Fonts -->
 
-	<!-- JS, Popper.js, jQuery, FontAwesome, and Google Fonts -->
-	<!-- JS, Popper.js, and jQuery -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-		crossorigin="anonymous"></script>
-	<script src="https://use.fontawesome.com/9469a27cf9.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+      integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://use.fontawesome.com/9469a27cf9.js"></script>
 
-	<style>
-		img {
-			border-radius: 10px;
-			max-height: 40vh;
-		}
+    <style>
+      img {
+        border-radius: 10px;
+        max-height: 40vh;
+      }
 
-		p a {
-			color: #227;
-		}
+      p a {
+        color: #227;
+      }
 
-		.avatar {
-			margin: 3rem;
-			box-sizing: border-box;
-			border: 2px white solid;
-			overflow: hidden;
-			box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-			animation: float 6s ease-in-out infinite;
-		}
+      .avatar {
+        margin: 3rem;
+        box-sizing: border-box;
+        border: 2px white solid;
+        overflow: hidden;
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        animation: float 6s ease-in-out infinite;
+        margin-bottom: 16px !important;
+      }
 
-	</style>
-</head>
+      #caption {
+        margin-top: 0px;
+        margin-bottom: 8vh;
+      }
+    </style>
+    <script type="text/javascript">
+      var index = -1;
+      var images = [
+        "assets/about2.jpg",
+        "assets/about3.jpg",
+				"assets/about4.jpg",
+				"assets/about5.jpg",
+				"assets/about1.jpg",
+      ];
+      var captions = ["Lookout Mountain, Golden CO", "Old Town, Corfu", "Humantay Lake, Cusco", "Phipps Conservatory, Pittsburgh", "Park Güell, Barcelona"];
+      function changeImage() {
+        index = index === images.length - 1 ? 0 : index + 1;
+        $("#aboutImage")
+          .animate({ opacity: 0.2 }, 300, function () {
+            $("#aboutImage").attr("src", images[index]);
+          })
+          .animate({ opacity: 1 }, 300);
+        $("#caption")
+          .animate({ opacity: 0.2 }, 300, function () {
+            document.getElementById("caption").innerHTML = captions[index];
+          })
+          .animate({ opacity: 1 }, 300);
+      }
+    </script>
+  </head>
 
-<body>
-	<script>
-		AOS.init();
-		$(document).ready(function () {
-			$('[data-toggle="tooltip"]').tooltip();
-		});
-	</script>
+  <body>
+    <script>
+      AOS.init();
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+      window.onload = function () {
+        setInterval(changeImage, 6000);
+      };
+    </script>
 
-	<header>
-		<div class="row justify-content-center justify-content-md-end">
-			<nav class="mt-5 mx-lg-5 navigation navbar navbar-expand-sm navbar-light">
-				<a class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"
-					aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">Menu
-				</a>
-				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<a class="nav-link" href="./"> Home </a>
-					<a class="nav-link" href="projects.html"> Projects </a>
-					<a class="nav-link" href="resume.html"> Resume </a>
-					<a class="nav-link selected" href="#"> About </a>
-				</div>
-			</nav>
-		</div>
-	</header>
+    <header>
+      <div class="row justify-content-center justify-content-md-end">
+        <nav
+          class="mt-5 mx-lg-5 navigation navbar navbar-expand-sm navbar-light"
+        >
+          <a
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >Menu
+          </a>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <a class="nav-link" href="./"> Home </a>
+            <a class="nav-link" href="projects.html"> Projects </a>
+            <a class="nav-link" href="resume.html"> Resume </a>
+            <a class="nav-link selected" href="#"> About </a>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-	<div class="container mt-3 px-3 px-md-5 mb-5 text-center">
-		<div data-aos="fade-down">
-			<h1>Phi Henry Nguyen</h1>
-			<img class="img-fluid d-block mx-auto my-4 my-lg-5 avatar" src="assets/about.jpg" data-tilt data-tilt-max="0" data-tilt-scale="1.05" data-tilt-speed="300" />
-		</div>
-		<div data-aos="fade-up">
-			<p class="text-justify mx-md-5">
-				Hi there! I'm <a href="https://en.wikipedia.org/wiki/Phi" target="_blank" rel="noopener">Phi</a> Henry Nguyen, a current junior majoring in Information Systems at Carnegie
-				Mellon University with minors in Computer Science, Software Engineering, and Human Computer Interaction. Last fall, I worked as a full stack software engineering intern 
-				at <a href="https://meraki.cisco.com/" target="_blank" rel="noopener">Cisco Meraki</a> and over this past summer, I worked as a software development engineer intern at 
-				<a href="https://www.amazon.com" target="_blank" rel="noopener">Amazon</a> on the Alexa AI Web Information team. I also have previous experience as a software developer at 
-				<a href="https://www.getpatchrx.com" target="_blank" rel="noopener">PatchRx</a> and as a teaching assisstant for 15-112, a fast-paced introductory CS class at CMU taught in Python.
-				This upcoming summer, I'll be a software engineering intern at 	<a href="https://www.schonfeld.com" target="_blank" rel="noopener">Schonfeld Strategic Advisors</a>.
-			</p>
-			<p class="text-justify mx-md-5">
-				I'm also involved on campus as the Vice President of Events and webmaster for
-				<a href="http://www.cmuasa.org/" target="_blank" rel="noopener">CMU's Asian Students Association</a>, a web developer for
-				<a href="https://lunargala.org/" target="_blank" rel="noopener">Lunar Gala</a>,
-				a consultant and webmaster for
-				<a href="https://cmu180dc.org/" target="_blank" rel="noopener">180 Degrees Consulting</a>,
-				and a professional development chair of
-				<a href="https://www.sigep.fun/" target="_blank" rel="noopener">Sigma Phi Epsilon</a>.
-			</p>
-			<p class="text-justify mx-md-5">
-				Feel free to connect with me on
-				<a href="https://www.linkedin.com/in/phi-henry-nguyen/" target="_blank" rel="noopener">LinkedIn</a>
-				or reach out through email at
-				<a href="mailto:hpnguyen@andrew.cmu.edu" target="_blank" rel="noopener">hpnguyen@andrew.cmu.edu</a>!
-			</p>
-		</div>
-	</div>
+    <div class="container mt-3 px-3 px-md-5 mb-5 text-center">
+      <div data-aos="fade-down">
+        <h1>Phi Henry Nguyen</h1>
+        <div class="">
+          <img
+            id="aboutImage"
+            class="img-fluid d-block mx-auto my-4 my-lg-5 avatar"
+            src="assets/about1.jpg"
+            data-tilt
+            data-tilt-max="0"
+            data-tilt-scale="1.05"
+            data-tilt-speed="300"
+            data-toggle="tooltip"
+            data-placement="right"
+          />
+          <h6 id="caption">Park Güell, Barcelona</h6>
+        </div>
+      </div>
+      <div data-aos="fade-up">
+        <p class="text-justify mx-md-5">
+          Hi there! I'm
+          <a
+            href="https://en.wikipedia.org/wiki/Phi"
+            target="_blank"
+            rel="noopener"
+            >Phi</a
+          >
+          Henry Nguyen, a current junior majoring in Information Systems at
+          Carnegie Mellon University with minors in Computer Science, Software
+          Engineering, and Human Computer Interaction. Last fall, I worked as a
+          full stack software engineering intern at
+          <a href="https://meraki.cisco.com/" target="_blank" rel="noopener"
+            >Cisco Meraki</a
+          >
+          and over this past summer, I worked as a software development engineer
+          intern at
+          <a href="https://www.amazon.com" target="_blank" rel="noopener"
+            >Amazon</a
+          >
+          on the Alexa AI Web Information team. I also have previous experience
+          as a software developer at
+          <a href="https://www.getpatchrx.com" target="_blank" rel="noopener"
+            >PatchRx</a
+          >
+          and as a teaching assisstant for 15-112, a fast-paced introductory CS
+          class at CMU taught in Python. This upcoming summer, I'll be a
+          software engineering intern at
+          <a href="https://www.schonfeld.com" target="_blank" rel="noopener"
+            >Schonfeld Strategic Advisors</a
+          >.
+        </p>
+        <p class="text-justify mx-md-5">
+          I'm also involved on campus as the Vice President of Events and
+          webmaster for
+          <a href="http://www.cmuasa.org/" target="_blank" rel="noopener"
+            >CMU's Asian Students Association</a
+          >, a web developer for
+          <a href="https://lunargala.org/" target="_blank" rel="noopener"
+            >Lunar Gala</a
+          >, a consultant and webmaster for
+          <a href="https://cmu180dc.org/" target="_blank" rel="noopener"
+            >180 Degrees Consulting</a
+          >, and a professional development chair of
+          <a href="https://www.sigep.fun/" target="_blank" rel="noopener"
+            >Sigma Phi Epsilon</a
+          >.
+        </p>
+        <p class="text-justify mx-md-5">
+          Feel free to connect with me on
+          <a
+            href="https://www.linkedin.com/in/phi-henry-nguyen/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          or reach out through email at
+          <a
+            href="mailto:hpnguyen@andrew.cmu.edu"
+            target="_blank"
+            rel="noopener"
+            >hpnguyen@andrew.cmu.edu</a
+          >!
+        </p>
+      </div>
+    </div>
 
-	<footer>
-		<hr width="80%" />
-		<p>&copy 2022 Phi Henry Nguyen</p>
-	</footer>
+    <footer>
+      <hr width="80%" />
+      <p>&copy 2022 Phi Henry Nguyen</p>
+    </footer>
 
-	<div class="icons text-right" style="font-size: 1.2rem;">
-		<a href="https://github.com/phi-h-nguyen" target="_blank" rel="noopener" data-toggle="tooltip"
-			data-placement="top" title="github.com/phi-h-nguyen">
-			<i class="fa fa-github fa-lg" aria-hidden="true"></i>
-		</a>
-		<a href="https://www.linkedin.com/in/phi-henry-nguyen/" target="_blank" rel="noopener" data-toggle="tooltip"
-			data-placement="top" title="linkedin.com/in/phi-henry-nguyen">
-			<i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
-		</a>
-		<a href="mailto:hpnguyen@andrew.cmu.edu" target="_blank" rel="noopener" data-toggle="tooltip"
-			data-placement="top" title="hpnguyen@andrew.cmu.edu">
-			<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
-		</a>
-	</div>
+    <div class="icons text-right" style="font-size: 1.2rem">
+      <a
+        href="https://github.com/phi-h-nguyen"
+        target="_blank"
+        rel="noopener"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="github.com/phi-h-nguyen"
+      >
+        <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/phi-henry-nguyen/"
+        target="_blank"
+        rel="noopener"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="linkedin.com/in/phi-henry-nguyen"
+      >
+        <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+      </a>
+      <a
+        href="mailto:hpnguyen@andrew.cmu.edu"
+        target="_blank"
+        rel="noopener"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="hpnguyen@andrew.cmu.edu"
+      >
+        <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+      </a>
+    </div>
 
-	<script>
-		$(document).ready(function () {
-			$('[data-toggle="tooltip"]').tooltip();
-		});
-	</script>
-	<script src="js/tilt.js"></script> <!-- Load Tilt.js library -->
-
-</body>
-
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+    <script src="js/tilt.js"></script>
+    <!-- Load Tilt.js library -->
+  </body>
 </html>
