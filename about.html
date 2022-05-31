@@ -58,18 +58,14 @@
     <script src="https://use.fontawesome.com/9469a27cf9.js"></script>
 
     <style>
-			.hiddenImage {
-				display: none;
-			}
+      .hiddenImage {
+        display: none;
+      }
 
       img {
         border-radius: 10px;
         max-height: 40vh;
-				min-height: 200px;
-      }
-
-      p a {
-        color: #227;
+        min-height: 200px;
       }
 
       .avatar {
@@ -92,12 +88,19 @@
       var images = [
         "assets/about2.jpg",
         "assets/about3.jpg",
-				"assets/about4.jpg",
-				"assets/about5.jpg",
-				"assets/about6.jpg",
-				"assets/about1.jpg",
+        "assets/about4.jpg",
+        "assets/about5.jpg",
+        "assets/about6.jpg",
+        "assets/about1.jpg",
       ];
-      var captions = ["Lookout Mountain, Golden CO", "Museum of Asian Art of Corfu", "Humantay Lake, Cusco", "Phipps Conservatory, Pittsburgh", "Acropolis of Athens", "Park Güell, Barcelona"];
+      var captions = [
+        "Lookout Mountain, Golden CO",
+        "Museum of Asian Art of Corfu",
+        "Humantay Lake, Cusco",
+        "Phipps Conservatory, Pittsburgh",
+        "Acropolis of Athens",
+        "Park Güell, Barcelona",
+      ];
       function changeImage() {
         index = index === images.length - 1 ? 0 : index + 1;
         $("#aboutImage")
@@ -144,7 +147,7 @@
             <a class="nav-link" href="projects.html"> Projects </a>
             <a class="nav-link" href="resume.html"> Resume </a>
             <a class="nav-link selected" href="#"> About </a>
-						<a class="nav-link" href="favs.html"> Favs </a>
+            <a class="nav-link" href="favs.html"> Favs </a>
           </div>
         </nav>
       </div>
@@ -154,12 +157,12 @@
       <div data-aos="fade-down">
         <h1>Phi Henry Nguyen</h1>
         <div class="">
-					<img class="hiddenImage" src="assets/about1.jpg"/>
-					<img class="hiddenImage" src="assets/about2.jpg"/>
-					<img class="hiddenImage" src="assets/about3.jpg"/>
-					<img class="hiddenImage" src="assets/about4.jpg"/>
-					<img class="hiddenImage" src="assets/about5.jpg"/>
-					<img class="hiddenImage" src="assets/about6.jpg"/>
+          <img class="hiddenImage" src="assets/about1.jpg" />
+          <img class="hiddenImage" src="assets/about2.jpg" />
+          <img class="hiddenImage" src="assets/about3.jpg" />
+          <img class="hiddenImage" src="assets/about4.jpg" />
+          <img class="hiddenImage" src="assets/about5.jpg" />
+          <img class="hiddenImage" src="assets/about6.jpg" />
           <img
             id="aboutImage"
             class="img-fluid d-block mx-auto my-4 my-lg-5 avatar"
@@ -169,7 +172,8 @@
             data-tilt-scale="1.05"
             data-tilt-speed="300"
             data-toggle="tooltip"
-            data-placement="right"
+            data-placement="top"
+            title="Some cool pictures from places I've visted :)"
           />
           <h6 id="caption">Park Güell, Barcelona</h6>
         </div>
@@ -185,12 +189,23 @@
           >
           Henry Nguyen, a rising senior majoring in Information Systems at
           Carnegie Mellon University with minors in Computer Science, Software
-          Engineering, and Human Computer Interaction. Last fall, I worked as a
-          full stack software engineering intern at
+          Engineering, and Human Computer Interaction. If you'd like to indulge
+          me in my Mary Poppins-inspired window into my personality through a
+          list of some of my favorite things, check out
+          <a href="/favs.html" rel="noopener"> this page</a>!
+        </p>
+        <p class="text-justify mx-md-5">
+          This summer, I'll be working as a software engineering intern at
+          <a href="https://www.schonfeld.com" target="_blank" rel="noopener"
+            >Schonfeld Strategic Advisors</a
+          >
+          in NYC on the risk application technology team. Last fall, I took a
+          semester off from school and worked as a full stack software
+          engineering intern at
           <a href="https://meraki.cisco.com/" target="_blank" rel="noopener"
             >Cisco Meraki</a
           >
-          and over this past summer, I worked as a software development engineer
+          and in the summer of 2021, I worked as a software development engineer
           intern at
           <a href="https://www.amazon.com" target="_blank" rel="noopener"
             >Amazon</a
@@ -199,13 +214,9 @@
           as a software developer at
           <a href="https://www.getpatchrx.com" target="_blank" rel="noopener"
             >PatchRx</a
-          >
-          and as a teaching assisstant for 15-112, a fast-paced introductory CS
-          class at CMU taught in Python. This summer, I'll be a
-          software engineering intern at
-          <a href="https://www.schonfeld.com" target="_blank" rel="noopener"
-            >Schonfeld Strategic Advisors</a
-          > on the risk application technology team.
+          >, a teaching assistant for 15-112, a fast-paced introductory CS class
+          at CMU taught in Python, and as a head teaching assistant for 67-272,
+          a core IS class on web application development taught in Ruby on Rails.
         </p>
         <p class="text-justify mx-md-5">
           I'm also involved on campus as the Vice President of Events and
@@ -280,7 +291,7 @@
       </a>
     </div>
 
-    <script src="js/tilt.js"></script>
     <!-- Load Tilt.js library -->
+    <script src="js/tilt.js"></script>
   </body>
 </html>

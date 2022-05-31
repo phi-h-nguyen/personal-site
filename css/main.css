@@ -135,6 +135,10 @@ a:hover {
     color: #888
 }
 
+h3 a, h5 a, p a {
+    color: rgb(50, 50, 156);
+}
+  
 /* Navbar */
 
 header {
@@ -191,6 +195,12 @@ footer p {
 .tooltip-inner {
     white-space: nowrap;
     max-width: none;
+}
+
+/* Misc Styling */
+
+.card {
+    border: 2px white solid;
 }
 
 /* Mobile Styling */
