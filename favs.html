@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>my mary poppins page</title>
+    <meta
+      name="description"
+      content="My Favorite Things - Phi Henry Nguyen - Student at Carnegie Mellon University"
+    />
+    <link rel="icon" href="assets/favicon.png" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Phi Henry Nguyen" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="My Favorite Things" />
+    <meta property="og:image" content="https://i.ibb.co/0nzJth5/landing.jpg" />
+
+    <!-- Bootstrap, AOS, and Google Fonts -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans:wght@300&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/aos.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- JS, Popper.js, jQuery, FontAwesome, and Google Fonts -->
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://use.fontawesome.com/9469a27cf9.js"></script>
+
+    <style>
+      .card {
+        flex-direction: row;
+        border: 2px white solid;
+      }
+
+      .onMobile {
+        display: none;
+      }
+
+      @media (max-width: 992px) {
+        .card {
+          flex-direction: column;
+          padding-top: 20px;
+        }
+
+        .card img {
+          align-self: center;
+        }
+
+        .card h5 {
+          text-align: center;
+        }
+
+        .onMobile {
+          display: block;
+        }
+      }
+
+      .card img {
+        height: 35vh;
+        width: fit-content;
+        min-height: 200px;
+        border-radius: 2.5px;
+      }
+
+      .card-body {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align: left;
+        flex-direction: row;
+      }
+
+      h3 a,
+      h5 a,
+      p a {
+        color: #227;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      AOS.init();
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+
+    <header>
+      <div class="row justify-content-center justify-content-md-end">
+        <nav
+          class="mt-5 mx-lg-5 navigation navbar navbar-expand-sm navbar-light"
+        >
+          <a
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >Menu
+          </a>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <a class="nav-link" href="./"> Home </a>
+            <a class="nav-link" href="projects.html"> Projects </a>
+            <a class="nav-link" href="#"> Resume </a>
+            <a class="nav-link" href="about.html"> About </a>
+            <a class="nav-link selected" href="favs.html"> Favs </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--
+
+      Other things:
+        - restaurant in pitsburgh: Mola
+        - artist: Tai Verdes 
+        - record label: 88rising
+        - thing to cook: 
+
+    -->
+    <div class="container text-center my-4" data-aos="fade-up">
+      <div data-aos="fade-down">
+        <h3 class="mb-4">
+          An arbitrary list of some of
+          <a
+            href="https://www.youtube.com/watch?v=2G6dd7ikrXs"
+            target="_blank"
+            rel="noopener"
+            >my favorite things</a
+          >
+        </h3>
+        <h5>
+          Share any of these favorite things or discover something new? Let me
+          know!
+        </h5>
+      </div>
+      <div class="row" data-aos="fade-up">
+        <div class="col-12 my-3">
+          <div
+            class="card hoverable h-100"
+            data-tilt
+            data-tilt-perspective="2000"
+            data-tilt-scale="1.04"
+            data-tilt-speed="300"
+          >
+            <img class="card-img-top" src="assets/favs/daily.jpeg" />
+            <div class="card-body">
+              <div>
+                <h5 class="card-title">
+                  My favorite podcast: <br class="onMobile" />
+                  <a
+                    href="https://open.spotify.com/show/3IM0lmZxpFAY7CwMuv9H4g?si=a45519e91493464b"
+                    target="_blank"
+                    rel="noopener"
+                    >The Daily by the New York Times</a
+                  >
+                </h5>
+                <p class="card-text">
+                  I love The Daily because it's a succint, digestible way to
+                  learn about the most interesting story of the day on my walk
+                  to class.
+                  <a
+                    href="https://open.spotify.com/episode/16SPQf9M9mfzzmufattRCb?si=203beee4e4c34e44"
+                    target="_blank"
+                    rel="noopener"
+                    >My favorite episode, about the Bird Aren't Real movement</a
+                  >.
+                </p>
+                <p class="m-0">
+                  Other podcasts I enjoy listening to are
+                  <a
+                    href="https://open.spotify.com/show/0KxdEdeY2Wb3zr28dMlQva?si=7a6a5a25486c4979"
+                    target="_blank"
+                    rel="noopener"
+                    >The Journal</a
+                  >
+                  by the Wall Street Journal,
+                  <a
+                    href="https://open.spotify.com/show/5RllMBgvDnTau8nnsCUdse?si=4120e7cae8cd4a64"
+                    target="_blank"
+                    rel="noopener"
+                    >The Best One Yet</a
+                  >
+                  (formerly Robinhood Snacks), and
+                  <a
+                    href="https://open.spotify.com/show/6E709HRH7XaiZrMfgtNCun?si=225ed9dbba4d4087"
+                    target="_blank"
+                    rel="noopener"
+                    >How I Built This with Guy Raz</a
+                  >.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 my-3">
+          <div
+            class="card hoverable h-100"
+            data-tilt
+            data-tilt-perspective="2000"
+            data-tilt-scale="1.04"
+            data-tilt-speed="300"
+          >
+            <img class="card-img-top" src="assets/favs/book.jpeg" />
+            <div class="card-body">
+              <div>
+                <h5 class="card-title">
+                  My favorite book: <br class="onMobile" />
+                  <a
+                    href="https://www.goodreads.com/book/show/25899336-when-breath-becomes-air"
+                    target="_blank"
+                    rel="noopener"
+                    >When Breath Becomes Air</a
+                  >
+                  by Paul Kalanithi
+                </h5>
+                <p class="card-text">
+                  A recommendation from my two of my older siblings in medicine,
+                  When Breath Becomes Air was a poignant and powerful story that
+                  made me reflect on my own human identity and morality, while
+                  easily becoming my favorite pandemic read. Plus, it's a much
+                  less cliché favorite book to have in my field compared to my
+                  siblings.
+                </p>
+
+                <p class="card-text">
+                  Some other strong contenders include
+                  <a
+                    href="https://www.goodreads.com/book/show/40180021-naked-economics"
+                    target="_blank"
+                    rel="noopener"
+                    >Naked Economics</a
+                  >
+                  by Charles Wheelan and
+                  <a
+                    href="https://www.goodreads.com/en/book/show/15195.The_Complete_Maus"
+                    target="_blank"
+                    rel="noopener"
+                    >Maus</a
+                  >
+                  by Art Spiegelman.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 my-3">
+          <div
+            class="card hoverable h-100"
+            data-tilt
+            data-tilt-perspective="2000"
+            data-tilt-scale="1.04"
+            data-tilt-speed="300"
+          >
+            <img class="card-img-top" src="assets/favs/movie.jpeg" />
+            <div class="card-body">
+              <div>
+                <h5 class="card-title">
+                  My favorite movie: <br class="onMobile" />
+                  <a
+                    href="https://a24films.com/films/everything-everywhere-all-at-once"
+                    target="_blank"
+                    rel="noopener"
+                    >Everything Everywhere All At Once</a
+                  >
+                </h5>
+                <p class="card-text">
+                  It's always empowering to see a movie with an all-asian cast,
+                  and even more so when it gets so much positive praise from
+                  critics and pop culture. It was touching, relatable, and
+                  unpredictable in all of the best ways. My current laptop
+                  background is
+                  <a
+                    href="https://shop.a24films.com/products/laughing-rocks-multiverse-poster"
+                    target="_blank"
+                    rel="noopener"
+                    >this movie poster</a
+                  >
+                  too!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 my-3">
+          <div
+            class="card hoverable h-100"
+            data-tilt
+            data-tilt-perspective="2000"
+            data-tilt-scale="1.04"
+            data-tilt-speed="300"
+          >
+            <img class="card-img-top" src="assets/favs/album.jpeg" />
+            <div class="card-body">
+              <div>
+                <h5 class="card-title">
+                  My favorite music album: <br class="onMobile" />
+                  <a
+                    href="https://open.spotify.com/album/369I0Ohf9oV8A2TO9nvles?si=YYkokvw_SACW41Tz1luM5g"
+                    target="_blank"
+                    rel="noopener"
+                    >94.3 the real</a
+                  >
+                  by
+                  <a
+                    href="https://open.spotify.com/artist/5vGXVYudNgm9E7jhXMM0Ro?si=DiLgecJVRMm0qgHd3T91cw"
+                    target="_blank"
+                    rel="noopener"
+                    >Kid Quill</a
+                  >
+                </h5>
+                <p class="card-text">
+                  Kid Quill is everything I love about chill pop rap, and the
+                  radio dj skits mixed into the songs bring me back to a
+                  nostalgic time when I used to listen to the actual radio on
+                  the drive to school.
+                </p>
+                <p>
+                  My favorite song in the album:
+                  <a
+                    href="https://open.spotify.com/track/5tgxhcXZA351F77Libd5C7?si=a79ef1d2d9f743f2"
+                    target="_blank"
+                    rel="noopener"
+                    >White Shoes</a
+                  >, because anyone who knows me knows I love a pair of clean
+                  white shoes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 my-3">
+          <div
+            class="card hoverable h-100"
+            data-tilt
+            data-tilt-perspective="2000"
+            data-tilt-scale="1.04"
+            data-tilt-speed="300"
+          >
+            <img class="card-img-top" src="assets/favs/creator.jpeg" />
+            <div class="card-body">
+              <div>
+                <h5 class="card-title">
+                  My favorite creator: <br class="onMobile" />
+                  <a
+                    href="https://www.naturalhabitatshorts.com/"
+                    target="_blank"
+                    rel="noopener"
+                    >Natural Habitat Shorts</a
+                  >
+                </h5>
+                <p class="card-text">
+                  I love each of these cute, beautifully animated shorts for
+                  their witty humor and the fun fact that comes with each one
+                  (did you know that beavers can't stand the sound of running
+                  water and compulsively build dams to dampen the sound? Well
+                  now you do!
+                  <a
+                    href="https://www.naturalhabitatshorts.com/shorts?pgid=ku471zfv-7e1c7874-3a3f-4ef6-b18c-f7efe9bef2d2"
+                    target="_blank"
+                    rel="noopener"
+                    >[source]</a
+                  >). It's also a point of pride for me that I started following
+                  them when they only had two released shorts.
+                </p>
+                <p>
+                  <a
+                    href="https://www.naturalhabitatshorts.com/shorts?pgid=ku471zfv-48cb12f1-25b6-42ef-bf82-eb29c8dbbb25"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    My favorite short</a
+                  >. The intesity. The drama. The terror. A true masterpiece.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 my-3">
+          <div
+            class="card hoverable h-100"
+            data-tilt
+            data-tilt-perspective="2000"
+            data-tilt-scale="1.04"
+            data-tilt-speed="300"
+          >
+            <img class="card-img-top" src="assets/favs/corfu.jpeg" />
+            <div class="card-body">
+              <div>
+                <h5 class="card-title">
+                  My favorite vacation spot: <br class="onMobile" />
+                  <a
+                    href="https://www.greeka.com/ionian/corfu/"
+                    target="_blank"
+                    rel="noopener"
+                    >Corfu, Greece</a
+                  >
+                </h5>
+                <p class="card-text">
+                  Just south of Albania and west of mainland Greece, Corfu is by
+                  far my favorite place that I've travelled to. It's a beautiful
+                  blend of crystal clear water beaches, rugged mountains, and
+                  historical & cultural sites from its time under Venetian and
+                  French rule - all on an island with only pockets of fully
+                  developed tourist areas. It also features the only
+                  <a href="https://matk.gr/" target="_blank" rel="noopener"
+                    >museum of Asian art
+                  </a>
+                  in all of Greece! I took this picture above Faliraki Beach, a
+                  relaxing swimming beach nestled below the Old Town of Corfu.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 my-3">
+          <div
+            class="card hoverable h-100"
+            data-tilt
+            data-tilt-perspective="2000"
+            data-tilt-scale="1.04"
+            data-tilt-speed="300"
+          >
+            <img class="card-img-top" src="assets/favs/game.jpeg" />
+            <div class="card-body">
+              <div>
+                <h5 class="card-title">
+                  My favorite video game: <br class="onMobile" />
+                  <a
+                    href="https://undertale.com/"
+                    target="_blank"
+                    rel="noopener"
+                    >Undertale</a
+                  >
+                </h5>
+                <p class="card-text">
+                  I'm always amazed that this unassumingly deep and complex
+                  retro-esque game was almost entirely developed by one single
+                  person (Toby Fox). The cult classic is challenging, meta, and
+                  makes you question your own existence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 my-3">
+          <div
+            class="card hoverable h-100"
+            data-tilt
+            data-tilt-perspective="2000"
+            data-tilt-scale="1.04"
+            data-tilt-speed="300"
+          >
+            <img class="card-img-top" src="assets/favs/112.png" />
+            <div class="card-body">
+              <div>
+                <h5 class="card-title">
+                  My favorite CMU class: <br class="onMobile" />
+                  <a
+                    href="https://www.cs.cmu.edu/~112/"
+                    target="_blank"
+                    rel="noopener"
+                    >15-112</a
+                  >
+                </h5>
+                <p class="card-text">
+                  The notorious one-twelve. I took it during the fall of my
+                  freshman year, and it was a great introduction to python and
+                  the rigor of CS classes at CMU. Drawn by the course's unique
+                  culture, I ended up TA'ing the class for 4 semesters (but
+                  stopped right before they started giving the TA's quarterzips
+                  instead of hoodies).
+                </p>
+
+                <p class="card-text">
+                  Other great classes I loved are 17-356 (Software Engineering
+                  for Startups), 15-213 (Introduction to Computer Systems), and
+                  05-391 (Designing Human Centered Software)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <hr width="80%" />
+      <p>&copy 2022 Phi Henry Nguyen</p>
+    </footer>
+
+    <div class="icons text-right" style="font-size: 1.2rem">
+      <a
+        href="https://github.com/phi-h-nguyen"
+        target="_blank"
+        rel="noopener"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="github.com/phi-h-nguyen"
+      >
+        <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/phi-henry-nguyen/"
+        target="_blank"
+        rel="noopener"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="linkedin.com/in/phi-henry-nguyen"
+      >
+        <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+      </a>
+      <a
+        href="mailto:hpnguyen@andrew.cmu.edu"
+        target="_blank"
+        rel="noopener"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="hpnguyen@andrew.cmu.edu"
+      >
+        <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <script src="js/tilt.js"></script>
+    <!-- Load Tilt.js library -->
+  </body>
+</html>

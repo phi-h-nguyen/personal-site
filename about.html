@@ -58,9 +58,14 @@
     <script src="https://use.fontawesome.com/9469a27cf9.js"></script>
 
     <style>
+			.hiddenImage {
+				display: none;
+			}
+
       img {
         border-radius: 10px;
         max-height: 40vh;
+				min-height: 200px;
       }
 
       p a {
@@ -79,7 +84,7 @@
 
       #caption {
         margin-top: 0px;
-        margin-bottom: 8vh;
+        margin-bottom: 4vh;
       }
     </style>
     <script type="text/javascript">
@@ -89,9 +94,10 @@
         "assets/about3.jpg",
 				"assets/about4.jpg",
 				"assets/about5.jpg",
+				"assets/about6.jpg",
 				"assets/about1.jpg",
       ];
-      var captions = ["Lookout Mountain, Golden CO", "Old Town, Corfu", "Humantay Lake, Cusco", "Phipps Conservatory, Pittsburgh", "Park Güell, Barcelona"];
+      var captions = ["Lookout Mountain, Golden CO", "Museum of Asian Art of Corfu", "Humantay Lake, Cusco", "Phipps Conservatory, Pittsburgh", "Acropolis of Athens", "Park Güell, Barcelona"];
       function changeImage() {
         index = index === images.length - 1 ? 0 : index + 1;
         $("#aboutImage")
@@ -138,6 +144,7 @@
             <a class="nav-link" href="projects.html"> Projects </a>
             <a class="nav-link" href="resume.html"> Resume </a>
             <a class="nav-link selected" href="#"> About </a>
+						<a class="nav-link" href="favs.html"> Favs </a>
           </div>
         </nav>
       </div>
@@ -147,6 +154,11 @@
       <div data-aos="fade-down">
         <h1>Phi Henry Nguyen</h1>
         <div class="">
+					<img class="hiddenImage" src="assets/about1.jpg"/>
+					<img class="hiddenImage" src="assets/about2.jpg"/>
+					<img class="hiddenImage" src="assets/about3.jpg"/>
+					<img class="hiddenImage" src="assets/about4.jpg"/>
+					<img class="hiddenImage" src="assets/about5.jpg"/>
           <img
             id="aboutImage"
             class="img-fluid d-block mx-auto my-4 my-lg-5 avatar"
@@ -170,7 +182,7 @@
             rel="noopener"
             >Phi</a
           >
-          Henry Nguyen, a current junior majoring in Information Systems at
+          Henry Nguyen, a rising senior majoring in Information Systems at
           Carnegie Mellon University with minors in Computer Science, Software
           Engineering, and Human Computer Interaction. Last fall, I worked as a
           full stack software engineering intern at
@@ -267,11 +279,6 @@
       </a>
     </div>
 
-    <script>
-      $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-    </script>
     <script src="js/tilt.js"></script>
     <!-- Load Tilt.js library -->
   </body>
